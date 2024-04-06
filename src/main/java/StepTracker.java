@@ -9,12 +9,12 @@ private ArrayList <Integer> record;
      myGoalStep = goalStep;
  }
  public void addDailySteps(int step){
-  if (record.size() == 0){
-    return 0;
-  }
   record.add(step);
  }
  public double averageSteps(){
+  if (record.size() == 0){
+    return 0;
+  }
   int totalStep = 0;
   for (Integer steps : record){
     totalStep += steps;
