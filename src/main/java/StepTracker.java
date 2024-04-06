@@ -4,7 +4,7 @@ public class StepTracker
  /* to be implemented here */
 private int myGoalStep;
 private ArrayList <Integer> record;
- public stepTracker(int goalStep){
+ public StepTracker(int goalStep){
      record = new ArrayList <Integer> ();
      myGoalStep = goalStep;
  }
