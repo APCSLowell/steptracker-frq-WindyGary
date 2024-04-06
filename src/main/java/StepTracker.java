@@ -9,6 +9,9 @@ private ArrayList <Integer> record;
      myGoalStep = goalStep;
  }
  public void addDailySteps(int step){
+  if (record.size() == 0){
+    return 0;
+  }
   record.add(step);
  }
  public double averageSteps(){
@@ -19,9 +22,6 @@ private ArrayList <Integer> record;
   return (double) totalStep / record.size();
  }
  public int activeDays(){
-  if (record.size() == 0){
-    return 0;
-  }
   int count = 0;
   for (Integer active : record){
     if (active >= myGoalStep){
