@@ -13,14 +13,14 @@ private ArrayList <Integer> record;
  }
  public double averageSteps(){
   int totalStep = 0;
-  for (int steps : record){
+  for (Integer steps : record){
     totalStep += steps;
   }
   return (double) totalStep / record.size();
  }
  public int activeDays(){
   int count = 0;
-  for (int active : record){
+  for (Integer active : record){
     if (active >= myGoalStep){
       count++;
     }
